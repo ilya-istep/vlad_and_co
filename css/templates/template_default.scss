@@ -1,0 +1,28 @@
+.el-main{
+	background: $color1;
+}
+.header{
+	background: $color2;
+
+	.header-wrap{
+		@include wrap();
+
+		height:100px;
+		background: #f00;
+
+		@include desktop{
+			background: #0f0;
+			width: 90%;
+		}
+		@include laptop{
+			background: #00f;
+			width: 90%;
+		}
+		@include tablets{
+		width: 90%;
+		}
+		@include phones{
+			width: 90%;
+		}
+	}
+}
