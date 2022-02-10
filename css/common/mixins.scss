@@ -21,7 +21,17 @@
     }
 }
 @mixin phones {
-   @media screen and (max-width: $phones_max) {
-        @content;
-   }
+  @media screen and (max-width: $phones_max) {
+    @content;
+	}
+}
+
+@mixin mainBtn {
+	text-transform: uppercase;
+	background-color: $color1;
+	color: $color2;
+	padding: 10px 15px 10px 15px;
+	font-weight: 400;
+	font-size: 16px;
+	font-family: $robotoRegular;
 }

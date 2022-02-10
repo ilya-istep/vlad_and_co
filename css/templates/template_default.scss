@@ -1,28 +1,59 @@
-.el-main{
-	background: $color1;
-}
-.header{
-	background: $color2;
+// .header{
 
-	.header-wrap{
-		@include wrap();
+// 	.header-wrap{
+// 		@include wrap();
 
-		height:100px;
-		background: #f00;
+// 		height:100px;
+// 		background: #f00;
 
-		@include desktop{
-			background: #0f0;
-			width: 90%;
+// 		@include desktop{
+// 			background: #0f0;
+// 			width: 90%;
+// 		}
+// 		@include laptop{
+// 			background: #00f;
+// 			width: 90%;
+// 		}
+// 		@include tablets{
+// 		width: 90%;
+// 		}
+// 		@include phones{
+// 			width: 90%;
+// 		}
+// 	}
+// }
+
+
+.header {
+	background-color: #000;
+	opacity: .7;
+	min-height: 85px;
+	display: flex;
+	align-items: center;
+	&__wrapper {
+		@include wrap;
+		justify-content: space-between;
+	}
+	&__logo {
+		&-img {
+
 		}
-		@include laptop{
-			background: #00f;
-			width: 90%;
+	}
+	&__menu {
+		font-family: $robotoMedium;
+		font-weight: 500;
+
+	}
+	&__user-btns {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 200px;
+		&-search {
+
 		}
-		@include tablets{
-		width: 90%;
-		}
-		@include phones{
-			width: 90%;
+		&-authorize {
+			@include mainBtn;
 		}
 	}
 }
