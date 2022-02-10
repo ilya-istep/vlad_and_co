@@ -3,9 +3,80 @@
 @import 'common/mixins.scss';
 @import 'common/animation.scss';
 @import 'templates/template_default.scss';
+@import 'all.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+i{
+	color: #E50914;
+    font-size: 15px;
+    font-weight: 400;
+    width: 15.5px
+}
+.Movies_1_h2 i{
+	padding-left: 190px;
+	position: relative;
+	top: -40px;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+}
+.Movies_1_a{
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.Movies_1_a:hover a{
+	color: #cf2e2e;
+}
+h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 15px;
+}
+.Movies_1_h2 h2{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075;
+}
+.Movies_1_h2 p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075;
+	padding-left: 210px;
+	top: -53px;
+	position: relative;
+}
+.Movies_1_h2 img{
+	width: 10px;
+	height: auto;
+}
+.img_movies{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.Movies_1{
+	flex-direction: column;
+	color: #000;
+
+	img{
+		width: 325px;
+		height: auto; 
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.hover_movies{
 
 
-
-
-
+}
 @import 'common/media.scss';
