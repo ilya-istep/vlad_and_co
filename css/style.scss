@@ -1,11 +1,90 @@
 @import 'reset.css';
 @import 'common/var.scss';
-@import 'common/mixins.scss';
+@import 'all.min.css';
+/*@import 'common/mixins.scss';
 @import 'common/animation.scss';
 @import 'templates/template_default.scss';
 
+@import 'common/media.scss';*/
 
-
-
-
-@import 'common/media.scss';
+.header_text{
+	background-image: url(../img/S3.jpg);
+	background-size: cover;
+	min-height: 850px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	.header_text_wrap{
+		width: 1380px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		.header_film_text{
+			width: 50%;
+			min-height: 100%;
+			.header_text_logo{
+				p{
+					color: $color5;
+					display: inline;
+					padding: 1px 3px;
+					border: 2px solid $color5;
+					border-radius: 6px;
+					font-size: 16px;
+				}
+				margin-bottom: 10px;
+			}
+			h2{
+				font-size: 65px;
+				color: $color2;
+				margin-bottom: 15px;
+			}
+			.header_film_info{
+				p{
+					margin-bottom: 20px;
+					color: $color2;
+					font-size: 21px;
+					.header_film_info_color{
+						color: $color1;
+					}
+				}
+			}
+			.header_film_btns{
+				display: flex;
+				justify-content: space-between;
+				.header-film-play-btn{
+					margin-right: 50px;
+				}
+				.header-film-trailer-btn{
+					display: flex;
+					flex-grow: 1;
+					align-items: center;
+					transition: 1s ease all;
+					text-decoration: none;
+					i{
+						margin-right: 10px;
+						color: $color2;
+						font-size: 60px;
+						transition: 1s ease all;
+					}
+					p{
+						transition: 1s ease all;
+						color: $color2;
+						font-size: 20px;
+					}
+				}
+				.header-film-trailer-btn:hover{
+					p{
+						color: $color1;
+					}
+					i{
+						color: $color1;
+					}	
+				}
+			}
+		}
+		.header_text_empty{
+			width: 50%;
+			height: 1px;
+		}
+	}
+}
