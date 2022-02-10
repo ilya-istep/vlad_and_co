@@ -1,151 +1,45 @@
-@import url(reset.css);.el-main{background:#fcfcfc}.header{background:#fff}.header .header-wrap{width:1100px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;height:100px;background:#f00}@media screen and (min-width: 993px) and (max-width: 1200px){.header .header-wrap{background:#0f0;width:90%}}@media screen and (min-width: 769px) and (max-width: 992px){.header .header-wrap{background:#00f;width:90%}}@media screen and (min-width: 481px) and (max-width: 768px){.header .header-wrap{width:90%}}@media screen and (max-width: 480px){.header .header-wrap{width:90%}}
-
-
-
-.contetnt{
-
-}
-/*# sourceMappingURL=style.css.map */
-
-.container{
-	max-width: 1140px;
-	width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-.contetnt{
-	display: flex;
-	flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-.contetnt_r{
-	flex: 0 0 67%;
-    max-width: 67%;
-}
-.contetnt_l{
-	flex: 0 0 33%;
-    max-width: 33%;
-}
-.contetnt_l-blog{
-	box-sizing: border-box;
-}
-.contetnt_l-blog ul{
-	padding: 0;
-    margin: 0 0 25px;
-    border: none;
-}
-.tabs{
-	display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-}
-.contetnt_l-blog ul li{
-	list-style: none;
-    margin-right: 7px;
-    width: 31.4%;
-}
-.contetnt_l-blog ul li a:checked{
-	color: #fff!important;
-    background: #1091ff!important;
-}
-.contetnt_l-blog ul li a {
-	background: #fff;
-    font-size: 12px;
-    font-weight: 500;
-    color: #000;
-    text-transform: uppercase;
-    box-shadow: 0 10px 40px rgb(0 0 0 / 15%);
-    line-height: 12px;
-    padding: 12px;
-    width: 100%;
-    text-align: center;
-    cursor: pointer;
+@import url(reset.css);
+@import url(all.min.css);
+/*Media*/
+.header-top-menu {
+  background-color: #ccc;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .header-top-menu a {
     text-decoration: none;
-}
-a {
-	display: inline-block;
-	text-decoration: none;
-}
-.tad_line{
-	position: relative;
-    z-index: 2;
-    transition: all .3s;
-}
-.widgets_small{
-	padding-left: 117px;
-    min-height: 70px;
-}
-.widgets_small .line_img{
-	position: absolute;
-    left: 1px;
-    top: 0;
-    height: 77px;
-    width: 100px;
-}
-.line_img{
-	z-index: 2;
-}
-.wrap_img{
-	overflow: hidden;
-}
-.widgets_small .line_img img{
-	width: 100%;
-    height: 100%;
-    transition: all .3s;
-    object-fit: cover;
-    overflow: hidden;
-}
-.widgets_small:hover img{
-	transform: scale(1.3);
-}
-.line_text .mata2 a:first-child{
-	    color: #1091ff;
-}
-.line_text .mata2 a{
-	font-size: 12px;
-    text-transform: capitalize;
-    position: relative;
-    z-index: 2;
-    line-height: 17px;
-    margin-bottom: 5px;
-    font-weight: 400;
-}
-.line_text .mata2 a:last-child{
-	margin-left: 20px;
-    color: #17222b;
-    opacity: .75;
-}
-.line_text .mata2 a:last-child:before{
-	position: absolute;
-    content: "/";
-    height: 20px;
-    width: 10px;
-    left: -18px;
-    top: 50%;
-    margin-top: -10px;
-    line-height: 20px;
-    color: #17222b;
-    opacity: .3;
-    text-align: center;
-}
-.line_text h4{
-	font-size: 16px;
-    line-height: 21px;
-}
-.line_text h4 a{
-	color: #17222b;
-    font-weight: 500;
-}
-.probel{
-	height: 15px;
-}
-.border_tire{
-	border-top: 1px dashed #3a434b;
-}
-a, a:hover {
-    transition: all .4s;
-    color: #1091ff;
-}
+    outline: none; }
+  .header-top-menu .has-child:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    content: "\f078";
+    color: #FFFFFF; }
+  .header-top-menu .first-rank-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .header-top-menu .first-rank-menu__item {
+      padding: 0 15px; }
+      .header-top-menu .first-rank-menu__item > a {
+        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 500;
+        -webkit-transition: 0.5s ease;
+        transition: 0.5s ease; }
+      .header-top-menu .first-rank-menu__item:hover > a {
+        color: #E50914; }
+      .header-top-menu .first-rank-menu__item.has-child:hover:after {
+        color: #E50914; }
+  .header-top-menu .second-rank-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    opacity: 0; }
+    .header-top-menu .second-rank-menu__item > a {
+      color: #000000; }
+
+/*# sourceMappingURL=style.css.map */

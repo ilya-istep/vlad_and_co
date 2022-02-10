@@ -1,28 +1,47 @@
-.el-main{
-	background: $color1;
-}
-.header{
-	background: $color2;
+.header-top-menu{
+	background-color: #ccc;
+	justify-content: center;
+	display: flex;
+	a{
+		text-decoration: none;
+		outline: none;
+	}
+	.has-child:after{
+		font-family: "Font Awesome 5 Free"; 
+		font-weight: 600; 
+		content: "\f078";
+		color: $color2;
+	}
+	.first-rank-menu{
+		display: flex;
 
-	.header-wrap{
-		@include wrap();
+		&__item{
 
-		height:100px;
-		background: #f00;
 
-		@include desktop{
-			background: #0f0;
-			width: 90%;
+			padding: 0 15px;
+			& > a{
+				color: $color2;	
+				font-size: 16px;
+				font-weight: 500;
+				transition: 0.5s ease;
+			}
+			&:hover > a{
+				color: $color1;
+			}
+			&.has-child:hover:after{
+				color: $color1;
+			}
 		}
-		@include laptop{
-			background: #00f;
-			width: 90%;
-		}
-		@include tablets{
-		width: 90%;
-		}
-		@include phones{
-			width: 90%;
-		}
+	}
+	.second-rank-menu{
+		display: flex;
+		position: absolute;
+		opacity: 0;
+
+		&__item{
+			& > a{
+				color: $color3;
+			}
+		}	
 	}
 }
