@@ -1,56 +1,76 @@
-// .header{
-
-// 	.header-wrap{
-// 		@include wrap();
-
-// 		height:100px;
-// 		background: #f00;
-
-// 		@include desktop{
-// 			background: #0f0;
-// 			width: 90%;
-// 		}
-// 		@include laptop{
-// 			background: #00f;
-// 			width: 90%;
-// 		}
-// 		@include tablets{
-// 		width: 90%;
-// 		}
-// 		@include phones{
-// 			width: 90%;
-// 		}
-// 	}
-// }
-
-
 .header {
-	background-color: #000;
-	opacity: .7;
+	background-color: rgba(0, 0, 0, 0.5);
 	min-height: 85px;
 	display: flex;
 	align-items: center;
+	&__logo {
+		display: flex;
+		align-items: center;
+	}
 	&__wrapper {
 		@include wrap;
+		width: 1600px;
+		padding: 0 50px;
 		justify-content: space-between;
-	}
-	&__logo {
-		&-img {
-
-		}
 	}
 	&__menu {
 		font-family: $robotoMedium;
 		font-weight: 500;
-
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 600px;
+		&-item {
+			@include nestingUL;
+			& a {
+				outline: none;
+				font-family: $robotoRegular;
+			}
+			& > a {
+				font-family: $robotoMedium;
+				line-height: 50px;
+			}
+			&_active {
+				& a {
+					color: $color5;
+				}
+			}
+		}
+		&-link {
+			color: $color2;
+			text-decoration: none;
+			display: block;
+			position: relative;
+			padding-right: 15px;
+			transition: all .3s;
+			.arrow-down {
+				font-size: 10px;
+				position: absolute;
+				right: 0px;
+				top: 50%;
+				transform: translateY(-50%);
+				transition: all .1s;
+			}
+			&:hover .arrow-down,
+			&:hover {
+				color: $color5;
+			}
+		}
 	}
 	&__user-btns {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 200px;
+		width: 220px;
 		&-search {
-
+			display: block;
+			i {
+				font-size: 20px;
+				color: #fff;
+			}
+			&:hover i {
+				color: #FF2827;
+			}
 		}
 		&-authorize {
 			@include mainBtn;

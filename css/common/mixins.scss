@@ -21,7 +21,7 @@
     }
 }
 @mixin phones {
-  @media screen and (max-width: $phones_max) {
+    @media screen and (max-width: $phones_max) {
     @content;
 	}
 }
@@ -30,8 +30,43 @@
 	text-transform: uppercase;
 	background-color: $color1;
 	color: $color2;
-	padding: 10px 15px 10px 15px;
+	padding: 15px 20px;
 	font-weight: 400;
 	font-size: 16px;
 	font-family: $robotoRegular;
+	transition: all .3s;
+	cursor: pointer;
+	&:hover {
+		background-color: $color2;
+		color: $color1;
+	}
+}
+
+@mixin nestingUL {
+	position: relative;
+	transition: all .3s;
+	ul {
+		display: none;
+		background: #fff;
+    min-width: 220px;
+		left: -15px;
+		top: 40px;
+		padding: 10px 0;
+		box-shadow: 0px 3px 18px 0px rgba(0, 0, 0, .7);
+		& a {
+			padding: 10px 15px;
+			text-decoration: none;
+			color: #000;
+			display: block;
+			font-size: 15px;
+			white-space: nowrap;
+			&:hover {
+				color: $color1;
+			}
+		}
+	}
+	&:hover ul {
+		display: block;
+		position: absolute;
+	}
 }

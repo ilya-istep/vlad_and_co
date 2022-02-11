@@ -10,16 +10,89 @@
 <body class="el-main">
 	<header class="header">
 		<div class="header__wrapper">
-			<div class="header__logo">
+			<a class="header__logo" href="#">
 				<img class="header__logo-img" src="img/logo.png" alt="">
-			</div>
-			<div class="header__menu">
-				<!--  -->
-			</div>
+			</a>
+			<ul class="header__menu">
+				<li class="header__menu-item header__menu-item_active">
+					<a class="header__menu-link" href="#">Home</a>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="#">
+						Blog
+						<i class="fa-solid fa-chevron-down arrow-down"></i>
+					</a>
+					<ul class="nestingUL">
+						<li><a href="#">Left Slidebar</a></li>
+						<li><a href="#">Right Slidebar</a></li>
+						<li><a href="#">Blog List</a></li>
+						<li>
+							<a href="#">Blog Clean</a>
+							<ul>
+								<li><a href="#">Blog clean</a></li>
+								<li><a href="#">blog Clean – Full Width</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Blog Only Text</a></li>
+						<li><a href="#">Blog image</a></li>
+						<li><a href="#">No Slidebar</a></li>
+					</ul>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="#">
+						Post Format
+						<i class="fa-solid fa-chevron-down arrow-down"></i>
+					</a>
+					<ul class="nestingUL">
+						<li><a href="#">Text Only</a></li>
+						<li><a href="#">Standard</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Video</a></li>
+						<li><a href="#">Audio</a></li>	
+					</ul>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="#">
+						Page
+						<i class="fa-solid fa-chevron-down arrow-down"></i>
+					</a>
+					<ul class="nestingUL">
+						<li><a href="#">Ticket</a></li>
+						<li><a href="#">Shows</a></li>
+						<li><a href="#">About Us</a></li>
+						<li><a href="#">Features</a></li>
+						<li><a href="#">FAQs Page</a></li>
+						<li><a href="#">Service</a></li>
+						<li><a href="#">Page 404</a></li>
+					</ul>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="#">
+						Portfolio
+						<i class="fa-solid fa-chevron-down arrow-down"></i>
+					</a>
+					<ul class="nestingUL">
+						<li><a href="#">2 Column Containd</a></li>
+						<li><a href="#">3 Column Containd</a></li>
+						<li><a href="#">4 Column Containd</a></li>
+						<li><a href="#">2 Columns</a></li>
+						<li><a href="#">4 Columns</a></li>
+						<li><a href="#">6 Columns</a></li>
+						<li><a href="#">Masonry 2 Columns wide</a></li>
+						<li><a href="#">Masonry 3 Columns wide</a></li>
+						<li><a href="#">Masonry 4 Columns wide</a></li>
+						<li><a href="#">Masonry 3 Columns Contained</a></li>
+						<li><a href="#">Masonry 4 Columns Contained</a></li>
+					</ul>
+				</li>
+				<li class="header__menu-item">
+					<a class="header__menu-link" href="#">Contact Us</a>
+				</li>
+			</ul>
 			<div class="header__user-btns">
-				<div class="header__user-btns-search">
+				<a class="header__user-btns-search" href="#">
 					<i class="fa-solid fa-magnifying-glass"></i>
-				</div>
+				</a>
 				<div class="header__user-btns-authorize">Get in touch</div>
 			</div>
 		</div>
