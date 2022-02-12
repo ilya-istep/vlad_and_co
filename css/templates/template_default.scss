@@ -9,6 +9,7 @@
 	}
 	&__wrapper {
 		@include wrap;
+		display: flex;
 		width: 1600px;
 		padding: 0 50px;
 		justify-content: space-between;
@@ -75,5 +76,127 @@
 		&-authorize {
 			@include mainBtn;
 		}
+	}
+}
+
+.section {
+	@include section;
+	}
+
+.our-pricing-strategy {
+	@include wrap;
+	&__title {
+		text-transform: uppercase;
+		text-align: center;
+		width: 100%;
+		font-size: 30px;
+    font-weight: 500;
+		font-family: $robotoMedium;
+		margin-bottom: 50px;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__item {
+		width: 31%;
+		border: 2px solid transparent;
+		transition: .3s all;
+		text-align: center;
+		font-family: $robotoMedium;
+		font-weight: 500;
+		background-color: $color6;
+		color: $color2;
+		padding: 50px 0;
+		.strategy__item {
+			&-plan {
+				text-transform: uppercase;
+				font-size: 22px;
+				margin-bottom: 25px;
+			}
+			&-price {
+				font-size: 48px;
+				margin: 0 auto 50px auto;
+				padding: 13px 25px;
+				font-weight: 700;
+				font-family: $robotoBold;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				width: 78%;
+				background-color: $color5;
+				transition: all .3s;
+				& > span {
+					font-size: 18px;
+					&:first-of-type {
+						height: 0px;
+					}
+					&:last-of-type {
+						height: 40px;
+					}
+				}
+			}
+			&-parameters {
+				font-size: 18px;
+				font-family: $robotoRegular;
+				margin-bottom: 50px;
+			}
+			&-parameter {
+				position: relative;
+				width: fit-content;
+				margin: 0 auto;
+				&:before {
+					content: '\f00d';
+					position: absolute;
+					left: -15px;
+					top: 50%;
+					transform: translateY(-50%);
+					font-weight: 900;
+					font-family: $fontAwesome;
+					font-size: 10px;
+					color: $color5;
+				}
+				&_included {
+					&:before {
+						content: '\f00c';
+						color: $color2;
+					}
+				}
+				&:not(:last-child) {
+					margin-bottom: 25px;
+				}
+			}
+			&-btn {
+				// @include mainBtn;
+				border: 2px solid $color5;
+				padding: 12px 30px 10px 30px;
+				display: block;
+				transition: all .3s;
+				width: fit-content;
+				margin: 0 auto;
+				&_link {
+					text-transform: uppercase;
+					font-weight: 400;
+					font-family: $robotoRegular;
+					text-decoration: none;
+					color: $color5;
+				}
+			}
+		}
+		&:hover {
+			border: 2px solid $color5;
+		}
+		&:hover .strategy__item-price {
+			background-color: $color2;
+			color: $color5;
+		}
+		&:hover .strategy__item-btn{
+			border: 2px solid $color2;
+			background-color: $color2;
+		}
+	}
+	.narrow {
+		width: 30%;
 	}
 }
