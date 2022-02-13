@@ -1,144 +1,50 @@
-@import 'all.min.css';
-
-.footer{
-	a{
-		text-decoration: none;
-		outline: none;
-	}
-
-	&__main{		
-		background-image: url(../img/footer_back.jpg);
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-position: center;
+.widget{
+	@include wrap();
+	background-image: url(../img/1350x600-2.jpg);
+	background-size: $width_base auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: relative;
+	
+	&__wrap{
+		color: $color2;
+		display: flex;
+		flex-direction: column;
+		width: 45%;
 		position: relative;
+		@include widget-padding();
 
-		&-wrap{
-			@include wrap();
-			display: flex;
-			flex-direction: column;
-			justify-content: space-between;
-			position: relative;
-
-			.footer_adress_section{
-				display: flex;
-				width: 100%;
-				justify-content: space-between;
-				align-items: center;
-				position: relative;
-				@include footer_side_padding();
-				@include footer_main_padding();
-				box-sizing: border-box;
-				border-bottom: 1px solid rgba(133, 133, 133, 0.1);
-
-				.footer_logo{ 
-					justify-content: flex-start;
-					flex-grow: 1;
-				}
-				.footer_form_section{
-					display: flex;
-					align-items: center;
-					justify-content: flex-end;
-					flex-grow: 1;
-
-					form{
-						width: 100%;
-						display: flex;
-					}
-					input{
-						padding: 15px;
-						flex-grow: 1;
-						font-size: 14px;
-						background-color: $color2;
-						border-style: none;
-					}
-					button{
-						padding: 15px;
-    					color: $color1;
-   						background-color: $color2;
-   						border-style: none;
-   						font-family: "Font Awesome 5 Free";
-					}
-				}
-			}
-			.footer_contact_section{
-				@include footer_side_padding();
-				@include footer_main_padding();
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-
-				.contact_section_links{
-					a{
-						color: $color2;
-						font-size: 16px;
-						padding: 10px 30px 10px 0;
-						font-weight: 500;
-					    text-transform: capitalize;
-					    letter-spacing: 0.8px;
-					    transition: 0.3s ease;
-					}
-					a:hover{
-					    color: $color1;
-					}
-				}
-				.contact_section_social{
-					display: flex;
-					a{
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						font-family: "Font Awesome 5 Brands";
-						font-size: 20px;
-						color: $color3;
-						margin-left: 15px;
-						width: 36px;
-						height: 36px;
-						box-sizing: border-box;
-						border: 1px solid $color3;
-						background-color: transparent;
-						transition: 0.5s ease;
-					}
-					a:hover{
-						color: $color2;
-						border-color: $color1;
-						background-color: $color1;
-					}
-				}	
-			}
+		h2{
+			font-size: 60px;
+		    font-weight: 600;
+		    text-transform: capitalize;
+		    line-height: 1.3em;
 		}
-	}
-	&__copyright{
-		background-color: $color1;
-		position: relative;
-
-		&-wrap{
-			@include wrap();
-			display: flex;
-			align-items: center;
-
-			span{
-				flex-grow: 1;
-				@include footer_copyright_padding();
-				color: $color2;
-				padding: 10px;
-  				font-size: 16px;
-  				font-weight: 400;
-  				text-transform: capitalize;
-			}
-			.footer_pay_section{
-				flex-grow: 1;
-				display: flex;
-				justify-content: end;
-				@include footer_copyright_padding();
-
-				a{
-					font-family: "Font Awesome 5 Brands";
-					color:  $color2;
-					font-size: 26px;
-					margin-left: 15px;
-				}
-			}
+		p{
+			font-size: 18px;
+		    font-weight: 400;
+		    line-height: 24px;
+		    margin-bottom: 20px;
+		}
+		span{
+			padding-top: 30px;
+		}
+		a{
+			text-decoration: none;
+			outline: none;
+			font-size: 18px;
+		    font-weight: 500;
+		    text-transform: uppercase;
+		    color: $color2;
+		    background-color: $color1;
+		    border: 1px solid $color1;
+		    padding: 15px 30px 15px 30px;
+		    transition: 0.5s ease;
+		}
+		a:hover{
+			background-color: $color2;
+			color: $color1;
 		}
 	}
 }
+
