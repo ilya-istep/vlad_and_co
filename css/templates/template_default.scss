@@ -427,4 +427,300 @@
 	}
 }
 
+// START lastest-movies
+.wrap_Latest_Movies{
+	@include wrap;
+  margin: 0 auto 100px;
+}
+.wrap_Latest_Movies i{
+	color: #E50914;
+	font-size: 15px;
+	font-weight: 400;
+	width: 15.5px; 
+}
+.wrap_Latest_Movies a{
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500; 
+}
+.wrap_Latest_Movies h2{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 28px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+}
+.Latest_Movies_text{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 8px;
+}
+.VIEW{
+	margin: 24px 0px 24px;
+}
+.VIEW a{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #E50914;
+}
+.VIEW:hover a{
+	text-decoration: underline;
+}
+.Movies_1_a {
+	padding-top: 15px; 
+}
+.Movies_1_a:hover a{
+	color: #cf2e2e; 
+}
+.Movies_1_h2{
+	display: flex;
+}
+.Movies_1_h3{
+	display: flex;
+}
+.Movies_1_h4{
+	display: flex;
+}
+.Movies_1_h2 h2{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075; 
+}
+.Movies_1_h3 h2{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075; 
+}
+.Movies_1_h4 h2{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075; 
+}
+.Movies_1_h2 p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075;
+	margin-top: 20px;
+}
+.Movies_1_h4 p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075;
+	margin-top: 20px;
+}
+.Movies_1_h3 p{
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: #00000075;
+	margin-top: 20px;
+}
+.Movies_1_h2 img{
+	width: 10px;
+	height: auto;
+}
+.Movies_1_h3 img{
+	width: 10px;
+	height: auto;
+}
+.Movies_1_h4 img{
+	width: 10px;
+	height: auto;
+}
+.img_movies{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.Movies_1{
+	flex-direction: column;
+	color: #000;
+	padding: 0 8px;
+}
+.Movies_1 img{
+	width: 272.5px;
+	height: 172.94px;
+}
+.Movies_1_h3 .fa-clock{
+	margin-top: 20px;
+	margin-left: 122px;
+}
+.Movies_1_h4 .fa-clock{
+	margin-top: 20px;
+	margin-left: 80px;
+}
+.fa-clock{
+	margin-top: 20px;
+	margin-left: 50px;
+}
+.fa-thumbs-up{
+	margin-top: 20px;
+	margin-left: 5px;
+}
+.like{
+	margin-top: 20px;
+}
+.hover_movies{
+		overflow: hidden;
+		position: relative;
+}
+.hover_movies:before{
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all .5s;
+	opacity: 1;
+	transform: translate(-30%,-100%);
+	background-color: rgba(17,16,16,.16);
+}
+.hover_movies:after{
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	transition: all .7s;
+	opacity: 1;
+	transform: translate(-30%,-100%);
+	background-color: rgba(17,16,16,.16);
+}
+.hover_movies:hover:before{
+transform: translate(0px,0px);
+top: 0;
+left: 0;
+}
+.hover_movies:hover:after{
+transform: translate(0px,0px);
+right:  0;
+bottom: 0;
+}
+// END lastest-movies
 
+// END lastest-movies
+.Latest_News{
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.blog_image{
+  display: flex;
+  position: relative;
+}
+.wrap_blog_img{
+  overflow: hidden;
+  width: 430.97px;
+  margin-right: 150px;
+}
+.wrap_blog_img2{
+  overflow: hidden;
+  width: 430.97px;
+}
+.blog_image img{
+  width: 430.97px;
+  height: auto;
+  margin-left: 8px;
+}
+.blog_image a{
+  overflow: hidden;
+  margin-right: 150px;
+}
+.blog_image > a{
+  
+}
+.blog_image a:hover img{
+  transform: rotate(3deg) scale(1.1);
+  transition: all .4s ease;
+  opacity: 0.8;
+}
+.award_ceremony{
+  background-color: #fff;
+  width: 250px;
+  height: 170px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 60px;
+  left: 248px;
+  margin-right: 150px;
+  color: #000;
+  padding: 30px;
+}
+.award_ceremony h2{
+  font-size: 26px;
+  color: #000;
+  margin-top: 0;
+}
+.award_ceremony h2:hover{
+  color: #E50914;
+}
+.award_ceremony p{
+  color: #737373;
+  text-align: left;
+  margin: 0px 0px 30px 0px;
+  font-size: 16px;
+  line-height: 1.5;
+} 
+.award_ceremony a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.award_ceremony a:hover{
+  color: #E50914;
+  text-decoration: none;
+}
+.award_ceremony:hover img{
+  transform: rotate(3deg) scale(1.1);
+  transition: all .4s ease;
+  opacity: 0.8;
+}
+.award_ceremony2{
+  background-color: #fff;
+  width: 250px;
+  height: 170px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 60px;
+  left: 813px;
+  margin-right: 150px;
+  color: #000;
+  padding: 30px;
+}
+.award_ceremony2 h2{
+  font-size: 26px;
+  color: #000;
+  margin-top: 0;
+}
+.award_ceremony2 h2:hover{
+  color: #E50914;
+}
+.award_ceremony2 p{
+  color: #737373;
+  text-align: left;
+  margin: 0px 0px 30px 0px;
+  font-size: 16px;
+  line-height: 1.5;
+} 
+.award_ceremony2 a{
+  color: #000;
+  font-size: 16px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+.award_ceremony2 a:hover{
+  color: #E50914;
+  text-decoration: none;
+}
+// END lastest-movies
