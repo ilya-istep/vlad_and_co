@@ -82,6 +82,9 @@
 		}
 	}
 }
+.anchor {
+	@include anchor;
+}
 
 .widget{
 	@include wrap();
