@@ -4,10 +4,6 @@
 	margin: 0 auto;
 }
 
-@mixin section {
-	padding: 100px 0;
-}
-
 @mixin mainBtn {
 	text-transform: uppercase;
 	background-color: $color1;

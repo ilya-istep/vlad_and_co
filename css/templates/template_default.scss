@@ -1,6 +1,7 @@
 .header {
 	min-height: 85px;
 	height: 100%;
+	margin-bottom: 100px;
 	&__logo {
 		display: flex;
 		align-items: center;
@@ -92,6 +93,7 @@
 	padding: 110px 70px;
 	font-family: $robotoBold, sans-serif;
 	font-weight: 600;
+	margin-bottom: 100px;
 	&__wrap{
 		color: $color2;
 		display: flex;
@@ -130,12 +132,56 @@
 	}
 }
 
-.section {
-	@include section;
+.main-timer {
+	@include wrap;
+	background: url('../img/counter.jpg') no-repeat;
+	background-size: cover;
+	height: 200px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: $color2;
+	padding: 0 100px;
+	&__title {
+		font-family: $robotoBold, sans-serif;
+		font-size: 40px;
+		font-weight: 700;
+		line-height: 1.3em;
+	}
+	&__counter {
+		display: flex;
+		justify-content: space-between;
+		width: 390px;
+		height: 80px;
+		align-items: center;
+	}
+	&__item {
+		background-color: $color1;
+		font-size: 40px;
+		font-family: $robotoBold, sans-serif;
+		height: 100%;
+		width: 75px;
+		text-align: center;
+		line-height: 80px;
+	}
+	&__days {
+
+	}
+	&__hours {
+
+	}
+	&__minutes {
+
+	}
+	&__seconds {
+
+	}
 }
 
 .our-pricing-strategy {
 	@include wrap;
+	margin-bottom: 100px;
 	&__title {
 		text-transform: uppercase;
 		text-align: center;
