@@ -343,4 +343,88 @@
 	}
 }
 
+.movies_dva{
+	@include wrap;
+	padding: 0;
+  display: flex;
+	margin-bottom: 100px;
+	.movies_action{
+		width: 100%;
+		margin: 0 10px;
+	}
+	.movies_logo{
+		padding: 10px;
+		color: #000000;
+		font-size: 28px;
+		font-weight: 400;
+		text-transform: capitalize;
+		font-family: 'Roboto', sans-serif;
+	}
+	.movies_horror{
+		width: 100%;
+		margin: 0 10px;
+	}
+	.movies_video{
+		padding: 10px;
+		height: 360px;
+	}
+	.movies_video a{
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		display: block;
+	}
+	.movies_video a img{
+		width: 100%;
+		object-fit: cover;
+		height: 100%;
+	}
+	.catalog_movies{
+		display: flex;
+	}
+	
+	.kartocka{
+		width: 50%;
+		padding: 10px;
+	}
+	.link_kartocka_r{
+		display: flex;
+		padding: 10px;
+		border: 1px solid #ccc;
+		text-decoration: none;
+		&:hover .link_kartocka_r_text p{
+			color: $color5;
+			transition: all .3s;
+		}
+	}
+	.kartocka_r_img{
+		height: 116px;
+		width: 43%;
+		margin-right: 10px;
+	}
+	.kartocka_r_img img{
+		object-fit: cover;
+		height: 100%;
+	}
+	.link_kartocka_r_text h3{
+		margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		color: #E50914;
+		font-size: 14px;
+		font-weight: 400;
+		text-transform: capitalize;
+		font-family: 'Roboto', sans-serif;
+	}
+	.link_kartocka_r_text p{
+		margin-top: 20px;
+		color: #000000;
+		font-size: 18px;
+		line-height: 22px;
+		font-family: 'Roboto', sans-serif;
+	}
+	.link_kartocka_r_text{
+		margin-top: 20px;
+	}
+}
+
 
