@@ -2,13 +2,106 @@
 @import 'all.min.css';
 @import 'common/fonts.scss';
 @import 'common/var.scss';
+@import 'all.min.css';
 @import 'common/mixins.scss';
 @import 'common/animation.scss';
 @import 'templates/template_default.scss';
 
-
-
-
-
+.header_text{
+	@include wrap;
+	background-image: url(../img/S3.jpg);
+	background-size: cover;
+	min-height: 850px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	.header_text_wrap{
+		width: 1380px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		.header_film_text{
+			width: 50%;
+			min-height: 100%;
+			.header_text_logo{
+				p{
+					color: $color7;
+					display: inline;
+					padding: 1px 3px;
+					border: 2px solid $color7;
+					border-radius: 6px;
+					font-size: 16px;
+				}
+				margin-bottom: 10px;
+			}
+			h2{
+				font-size: 65px;
+				font-family: $robotoBold, sans-serif;
+				font-weight: 700;
+				color: $color2;
+				margin-bottom: 15px;
+			}
+			.header_film_info{
+				p{
+					margin-bottom: 20px;
+					color: $color2;
+					font-weight: 400;
+					font-family: $robotoRegular, sans-serif;
+					font-size: 21px;
+					.header_film_info_color{
+						color: $color1;
+					}
+				}
+			}
+			.header_film_btns{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.header-film-play-btn{
+					margin-right: 50px;
+					a {
+						@include mainBtn;
+						text-decoration: none;
+						font-family: $robotoBold, sans-serif;
+						display: block;
+						text-align: center;
+					}
+				}
+				.header-film-trailer-btn{
+					display: flex;
+					flex-grow: 1;
+					align-items: center;
+					transition: .3s  all;
+					text-decoration: none;
+					i{
+						margin-right: 10px;
+						color: $color2;
+						font-size: 60px;
+						transition: .3s all;
+					}
+					p{
+						transition: .3s all;
+						color: $color2;
+						font-size: 20px;
+						font-weight: 400;
+						font-family: $robotoRegular, sans-serif;
+					}
+				}
+				.header-film-trailer-btn:hover{
+					p{
+						color: $color1;
+					}
+					i{
+						color: $color1;
+					}	
+				}
+			}
+		}
+		.header_text_empty{
+			width: 50%;
+			height: 1px;
+		}
+	}
+}
 
 @import 'common/media.scss';
