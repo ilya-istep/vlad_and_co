@@ -13,6 +13,8 @@
 	bottom: 100px;
 	background-color: #000;
 	text-align: center;
+	display: block;
+	text-decoration: none;
 	&:before {
 		content: '\f0d8';
 		color: #fff;
