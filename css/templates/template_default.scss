@@ -179,6 +179,52 @@
 	}
 }
 
+.explore-language {
+	@include wrap;
+	margin-bottom: 100px;
+	&__title {
+		font-size: 28px;
+    font-weight: 400;
+		font-family: $robotoRegular, sans-serif;
+		margin-bottom: 20px;
+	}
+	&__items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__item {
+		width: 240px;
+		height: 120px;
+		text-align: center;
+		line-height: 120px;
+		color: $color2;
+		font-size: 30px;
+    font-weight: 600;
+		font-family: $robotoBold, sans-serif;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:hover {
+			background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(255,0,0,1) 100%);
+		}
+		&_english {
+			background: url('../img/language_1.jpg') no-repeat;
+		}
+		&_hindi {
+			background: url('../img/language_2.jpg') no-repeat;
+		}
+		&_marathi {
+			background: url('../img/language_3.jpg') no-repeat;
+		}
+		&_telugu {
+			background: url('../img/language_4.jpg') no-repeat;
+		}
+		&_tamil {
+			background: url('../img/language_5.jpg') no-repeat;
+		}
+	}
+
+}
+
 .our-pricing-strategy {
 	@include wrap;
 	margin-bottom: 100px;
