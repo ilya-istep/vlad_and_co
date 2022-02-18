@@ -735,14 +735,16 @@
 	background-color: rgba(17,16,16,.16);
 }
 .hover_movies:hover:before{
-transform: translate(0px,0px);
-top: 0;
-left: 0;
+	transform: translate(0px,0px);
+	top: 0;
+	left: 0;
+	opacity: 0;
 }
 .hover_movies:hover:after{
-transform: translate(0px,0px);
-right:  0;
-bottom: 0;
+	transform: translate(0px,0px);
+	right:  0;
+	bottom: 0;
+	opacity: 0;
 }
 // END lastest-movies
 
@@ -938,11 +940,13 @@ bottom: 0;
   transform: translate(0px,0px);
   top: 0;
   left: 0;
+	opacity: 0;
 }
 .bashir_r_img:hover:after{
   transform: translate(0px,0px);
   right:  0;
   bottom: 0;
+	opacity: 0;
 }
 .bashir_l_h_logo{
   color: #FFFFFF;

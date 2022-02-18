@@ -9,12 +9,16 @@
 	height: 50px;
 	position: fixed;
 	z-index: 4;
-	right: 50px;
-	bottom: 100px;
+	right: 25px;
+	bottom: 25px;
 	background-color: #000;
 	text-align: center;
 	display: block;
 	text-decoration: none;
+	transition: all .3s;
+	&:hover {
+		background-color: $color5;
+	}
 	&:before {
 		content: '\f0d8';
 		color: #fff;
