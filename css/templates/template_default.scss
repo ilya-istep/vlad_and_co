@@ -866,11 +866,12 @@
 
 // START bashir
 .bashir {
-	background: rgb(85, 85, 85);
+	background-image: url("../img/video.jpg");
+	background-size: cover;
 	margin-bottom: 100px;
 }
 .bashir_obertka{
-	@include wrap;
+  background-color: #000000d6;
   display: flex;
   padding: 150px 22.5px;
 }
@@ -880,7 +881,6 @@
   padding-right: 71px;
 }
 .bashir_l_h_button a{
-	@include mainBtn;
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
@@ -895,6 +895,7 @@
     text-decoration:none;
     font-weight: normal;
 }
+
 .bashir_l_h_button a:hover{
   background-color: #fff;
   color: red;
@@ -903,6 +904,7 @@
 .bashir_r_img{
   overflow: hidden;
   position: relative;
+
 }
 .bashir_r_img img{
   width: 100%;
@@ -940,26 +942,20 @@
   transform: translate(0px,0px);
   top: 0;
   left: 0;
-	opacity: 0;
 }
 .bashir_r_img:hover:after{
   transform: translate(0px,0px);
   right:  0;
   bottom: 0;
-	opacity: 0;
 }
 .bashir_l_h_logo{
+	font-family: $robotoBold;
   color: #FFFFFF;
     margin: 0px 0px 15px 0px;
     font-size: 40px !important;
     font-weight: 600;
-		font-family: $robotoBold, sans-serif;
     text-transform: capitalize;
     line-height: 1.3em;
-}
-.bashir_l_h_text {
-	font-weight: 400;
-	font-family: $robotoRegular, sans-serif;
 }
 .bashir_l_h_title{
     color: #FFFFFF;
@@ -968,11 +964,13 @@
     line-height: 24px;
 }
 .bashir_l_h_text p{
+	font-family: $robotoRegular;
+	font-weight: 400;
   color: #FFFFFF;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    margin: 0px 0px 20px 0px;
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	margin: 0px 0px 20px 0px;
 }
 .bashir_l{
   width: 50%;
