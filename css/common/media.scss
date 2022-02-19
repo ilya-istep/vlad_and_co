@@ -70,7 +70,7 @@
 		}
 	}
 }
-@include phones{
+@media (max-width: $phones_max) and (min-width: 460px){
 	.header_text{
 		.header_text_wrap{
 			max-width: 100%;
@@ -108,6 +108,96 @@
 						i{
 							font-size: 40px;
 						}
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 459px) and (min-width: 380px){
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 500px;
+			.header_film_text{
+				width: 100%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 26px;
+						margin-bottom: 5px;
+					}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						display: none;
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 379px){
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 380px;
+			.header_film_text{
+				width: 100%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 22px;
+						margin: 10px 0 5px;
+					}
+				.header_film_info{
+					height: 150px;
+					overflow: hidden;
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						display: none;
 					}
 				}
 			}
