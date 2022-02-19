@@ -69,16 +69,23 @@
 		width: 220px;
 		&-search {
 			display: block;
-			i {
-				font-size: 20px;
-				color: #fff;
-			}
-			&:hover i {
-				color: #FF2827;
+			font-size: 20px;
+			color: #fff;
+			&:hover {
+				color: $color5;
 			}
 		}
 		&-authorize {
 			@include mainBtn;
+		}
+		&-hamburger {
+			display: none;
+			color: $color2;
+			font-size: 20px;
+			cursor: pointer;
+			&:hover {
+				color: $color5;
+			}
 		}
 	}
 }
@@ -137,6 +144,8 @@
 
 .main-timer {
 	@include wrap;
+	width: 100%;
+	max-width: $width_base;
 	background: url('../img/counter.jpg') no-repeat;
 	background-size: cover;
 	height: 200px;
@@ -184,6 +193,8 @@
 
 .explore-language {
 	@include wrap;
+	max-width: $width_base;
+	width: 100%;
 	margin-bottom: 100px;
 	&__title {
 		font-size: 28px;
@@ -196,6 +207,7 @@
 		justify-content: space-between;
 	}
 	&__item {
+		margin: 0 5px;
 		width: 240px;
 		height: 120px;
 		text-align: center;
@@ -230,6 +242,8 @@
 
 .our-pricing-strategy {
 	@include wrap;
+	max-width: 1300px;
+	width: 100%;
 	margin-bottom: 100px;
 	&__title {
 		text-transform: uppercase;
@@ -881,19 +895,20 @@
   padding-right: 71px;
 }
 .bashir_l_h_button a{
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    fill: #FFFFFF;
-    color: #FFFFFF;
-    background-color: #E50914;
-    border-style: solid;
-    border-width: 1px 1px 1px 1px;
-    border-color: #E50914;
-    border-radius: 0px 0px 0px 0px;
-    padding: 15px 30px 15px 30px;
-    text-decoration:none;
-    font-weight: normal;
+	@include mainBtn;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: uppercase;
+	fill: #FFFFFF;
+	color: #FFFFFF;
+	background-color: #E50914;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	border-color: #E50914;
+	border-radius: 0px 0px 0px 0px;
+	padding: 15px 30px 15px 30px;
+	text-decoration:none;
+	font-weight: normal;
 }
 
 .bashir_l_h_button a:hover{

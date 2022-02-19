@@ -1,0 +1,154 @@
+@include desktop() {
+  
+  .header__wrapper {
+    padding: 0 25px;
+  }
+  .header__menu {
+    margin: 0 15px;
+  }
+}
+
+@include laptop() {
+
+}
+
+@media (max-width: $laptop_max) {
+  .header__wrapper {
+    padding: 0 25px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__user-btns {
+    width: 250px;
+    &-search {
+      order: 2;
+    }
+    &-authorize {
+      order: 1;
+    }
+    &-hamburger {
+      display: block;
+      order: 3;
+    }
+  }
+  .main-timer {
+    display: block;
+    text-align: center;
+    &__title {
+      padding: 20px 0;
+      font-size: 2em;
+    }
+    &__counter {
+      margin: 0 auto;
+      font-size: 2em;
+    }
+  }
+  .our-pricing-strategy {
+    &__items {
+      flex-direction: column;
+      
+    }
+    &__item {
+      margin-bottom: 25px;
+      width: 50%;
+    }
+    .narrow {
+      width: 50%;
+    }
+  }
+}
+
+@media (max-width: $tablets_max) {
+  .our-pricing-strategy {
+    .strategy {
+      &__item {
+        font-size: 1em;
+        &-plan {
+          font-size: 1em;
+        }
+        &-price {
+          font-size: 1.5em;
+          & span {
+            font-size: 0.8em;
+          }
+        }
+        &-parameters {
+          font-size: 0.8em;
+        }
+        &-parameter {
+          &_included {
+            color: $color9;
+          }
+          &:before {
+            display: none;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media (max-width: $tablets_max) and (min-width: 561px) {
+  .explore-language {
+    &__title {
+      text-align: center;
+    }
+    &__items {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 500px;
+    }
+    &__item {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .main-timer {
+    height: 170px;
+    padding: 0px 30px;
+    &__title {
+      padding: 10px 0;
+      font-size: 1.5em;
+    }
+    &__counter {
+      max-width: 360px;
+      width: 100%;
+    }
+    &__item {
+      font-size: 0.8em;
+      margin: 0 5px;
+    }
+  }
+  .explore-language {
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__items {
+      margin: 0 auto;
+      width: 250px;
+      flex-direction: column;
+    }
+    &__item {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@include tablets() {
+
+}
+
+@include phones() {
+  .header__user-btns {
+    width: 75px;
+    &-authorize {
+      display: none;
+    }
+  }
+}
