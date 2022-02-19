@@ -26,8 +26,7 @@
 				justify-content: space-between;
 				align-items: center;
 				position: relative;
-				@include footer_side_padding();
-				@include footer_main_padding();
+				padding: 50px 10px;
 				box-sizing: border-box;
 				border-bottom: 1px solid rgba(133, 133, 133, 0.1);
 
@@ -62,8 +61,7 @@
 				}
 			}
 			.footer_contact_section{
-				@include footer_side_padding();
-				@include footer_main_padding();
+				padding: 50px 10px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -84,6 +82,8 @@
 				}
 				.contact_section_social{
 					display: flex;
+					margin: 0 -8px; // исправил марджин, чтобы при адаптации выглядело ровнее
+
 					a{
 						display: flex;
 						align-items: center;
@@ -91,7 +91,7 @@
 						font-family: "Font Awesome 5 Brands";
 						font-size: 20px;
 						color: $color3;
-						margin-left: 15px;
+						margin: 0 8px; // исправил марджин, чтобы при адаптации выглядело ровнее
 						width: 36px;
 						height: 36px;
 						box-sizing: border-box;
@@ -119,7 +119,7 @@
 
 			span{
 				flex-grow: 1;
-				@include footer_copyright_padding();
+				padding: 10px;
 				color: $color2;
 				padding: 10px;
   				font-size: 16px;
@@ -130,13 +130,14 @@
 				flex-grow: 1;
 				display: flex;
 				justify-content: end;
-				@include footer_copyright_padding();
+				padding: 10px;
+				margin: 0 -10px; // исправил марджин, чтобы больше соответствовал расстояниям оригинала
 
 				a{
 					font-family: "Font Awesome 5 Brands";
 					color:  $color2;
 					font-size: 26px;
-					margin-left: 15px;
+					margin: 0 10px; // исправил марджин, чтобы больше соответствовал расстояниям оригинала
 				}
 			}
 		}

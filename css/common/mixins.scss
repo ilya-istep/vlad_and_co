@@ -3,17 +3,6 @@
 	margin: 0 auto;
 	display: flex;
 }
-@mixin footer_side_padding(){
-    padding-left: 10px;
-    padding-right: 10px;
-}
-@mixin footer_main_padding(){
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-@mixin footer_copyright_padding(){
-    padding: 10px;
-}
 
 /*Media*/
 @mixin desktop {
