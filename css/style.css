@@ -13,6 +13,18 @@
   font-family: "Roboto-Regulat";
   src: url("../fonts/Roboto-Regulat.woff2") format("woff2"), url("../fonts/Roboto-Regulat.woff") format("woff"), url("../fonts/Roboto-Regulat.ttf") format("ttf");
   font-weight: 400; }
+/* !!Theoretical breakpoints!!
+$desctop_max: 1409px;
+$desctop_min: 1200px;
+
+$laptop_max: 1199px;
+$laptop_min: 992px;
+
+$tablets_max: 991px;
+$tablets_min: 760px;
+
+$phones_max: 759px;
+*/
 /*Media*/
 .header {
   min-height: 85px;
@@ -1048,13 +1060,13 @@
       width: 50%;
       height: 1px; }
 
-@media screen and (min-width: 1200px) and (max-width: 1409px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .header_text .header_text_wrap {
     max-width: 1170px;
     min-height: 700px; }
     .header_text .header_text_wrap .header_film_text h2 {
       font-size: 38px; } }
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 769px) and (max-width: 992px) {
   .header_text .header_text_wrap {
     max-width: 960px;
     min-height: 650px; }
@@ -1064,7 +1076,7 @@
         font-size: 11px; }
       .header_text .header_text_wrap .header_film_text h2 {
         font-size: 34px; } }
-@media screen and (min-width: 760px) and (max-width: 991px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .header_text .header_text_wrap {
     max-width: 100%;
     min-height: 600px; }
@@ -1088,7 +1100,7 @@
           padding: 12px 15px; }
     .header_text .header_text_wrap .header_text_empty {
       display: none; } }
-@media (max-width: 759px) and (min-width: 460px) {
+@media (max-width: 480px) and (min-width: 460px) {
   .header_text .header_text_wrap {
     max-width: 100%;
     min-height: 500px; }
