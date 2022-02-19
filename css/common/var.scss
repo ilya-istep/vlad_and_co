@@ -8,18 +8,20 @@ $color7: #D5A101;
 $color8: #A4A4A4;
 
 $width_base: 1300px;
+$width_desctop: 1170px;
+$width_laptop: 960px;
 
 //medoa
-$desctop_max: 1200px;
-$desctop_min: 993px;
+$desctop_max: 1409px;
+$desctop_min: 1200px;
 
-$laptop_max: 992px;
-$laptop_min: 769px;
+$laptop_max: 1199px;
+$laptop_min: 992px;
 
-$tablets_max: 768px;
-$tablets_min: 481px;
+$tablets_max: 991px;
+$tablets_min: 760px;
 
-$phones_max: 480px;
+$phones_max: 759px;
 
 //fonts
 $robotoBold: "Roboto-Bold", sans-serif;

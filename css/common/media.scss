@@ -1,0 +1,119 @@
+@include desktop{
+	.header_text{
+		.header_text_wrap{
+			max-width: $width_desctop;
+			min-height: 700px;
+			.header_film_text{
+				h2{
+					font-size: 38px;
+				}
+			}
+		}
+	}
+}
+@include laptop{
+	.header_text{
+		.header_text_wrap{
+			max-width: $width_laptop;
+			min-height: 650px;
+			.header_film_text{
+				margin-top: 70px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+	}
+}
+@include tablets{
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 600px;
+			.header_film_text{
+				width: 80%;
+				margin-top: 70px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+				h2{
+					font-size: 28px;
+				}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+@include phones{
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 500px;
+			.header_film_text{
+				width: 80%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 26px;
+						margin-bottom: 5px;
+					}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						font-size: 14px;
+						i{
+							font-size: 40px;
+						}
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
