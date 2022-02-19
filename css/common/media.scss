@@ -31,6 +31,14 @@
       display: block;
       order: 3;
     }
+    & i {
+      background-color: $color5;
+      padding: 10px;
+      border-radius: 50%;
+      &:hover {
+        color: $color3;
+      }
+    }
   }
   .main-timer {
     display: block;
@@ -61,14 +69,22 @@
 
 @media (max-width: $tablets_max) {
   .our-pricing-strategy {
+    .narrow {
+      width: 100%;
+    }
+    &__item {
+      width: 100%;
+    }
     .strategy {
       &__item {
+        width: 100%;
         font-size: 1em;
         &-plan {
           font-size: 1em;
         }
         &-price {
           font-size: 1.5em;
+          width: 35%;
           & span {
             font-size: 0.8em;
           }
@@ -84,7 +100,6 @@
             display: none;
           }
         }
-
       }
     }
   }
@@ -140,15 +155,12 @@
   }
 }
 
-@include tablets() {
-
-}
-
 @include phones() {
   .header__user-btns {
-    width: 75px;
+    width: 90px;
     &-authorize {
       display: none;
     }
   }
 }
+
