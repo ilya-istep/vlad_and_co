@@ -13,6 +13,7 @@
 	width: 100%;
 	.header_text_wrap{
 		max-width: $width_base;
+		@include wrap;
 		margin: 0 auto;
 		min-height: 850px;
 		display: flex;
