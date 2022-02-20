@@ -370,3 +370,46 @@
 	}
 }
 
+// // media of Alexey
+@media (max-width: $desctop_max) {
+	.widget{
+		width: 97%;
+		height: 400px;
+
+		&__wrap{	
+
+			h2{
+				font-size: 28px;
+				padding-bottom: 15px;
+			}
+			p{
+				font-size: 14px;
+				padding-bottom: 15px;
+			}
+			span{
+				padding-top: 25px;
+			}
+			a{
+				font-size: 14px;
+				padding: 12px 30px;
+			}
+		}
+	}
+}
+
+@media (min-width: $laptop_min) and (max-width: $desctop_max) {
+	.widget{
+		&__wrap{
+			width: 70%;
+		}
+	}
+}
+
+@media (max-width: $tablets_max) {
+	.widget{
+		&__wrap{
+			padding-left: 40px;
+			width: 90%;
+		}
+	}
+}
