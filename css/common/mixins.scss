@@ -3,9 +3,6 @@
 	margin: 0 auto;
 	display: flex;
 }
-@mixin widget-padding(){
-    padding: 110px 70px;
-}
 
 /*Media*/
 @mixin desktop {

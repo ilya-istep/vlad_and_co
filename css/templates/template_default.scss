@@ -1,30 +1,34 @@
 .widget{
 	@include wrap();
+	height: 600px;
 	background-image: url(../img/1350x600-2.jpg);
-	background-size: $width_base auto;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 	position: relative;
+	display: flex;
 	
 	&__wrap{
 		color: $color2;
 		display: flex;
 		flex-direction: column;
+		align-self: center;
+		padding-left: 70px;
 		width: 45%;
 		position: relative;
-		@include widget-padding();
 
 		h2{
 			font-size: 34px;
 		    font-weight: 600;
 		    text-transform: capitalize;
 		    line-height: 1.3em;
+		    padding-bottom: 20px;
 		}
 		p{
 			font-size: 18px;
 		    font-weight: 400;
 		    line-height: 24px;
-		    margin-bottom: 20px;
+		    padding-bottom: 20px;
 		}
 		span{
 			padding-top: 30px;
@@ -38,7 +42,7 @@
 		    color: $color2;
 		    background-color: $color1;
 		    border: 1px solid $color1;
-		    padding: 15px 30px 15px 30px;
+		    padding: 15px 30px;
 		    transition: 0.5s ease;
 		}
 		a:hover{
