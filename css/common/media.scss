@@ -1,0 +1,372 @@
+@include desktop() {
+  .header__wrapper {
+    padding: 0 25px;
+  }
+  .header__menu {
+    margin: 0 15px;
+  }
+  .header_text{
+		.header_text_wrap{
+			max-width: $desctop_max;
+			min-height: 700px;
+			.header_film_text{
+				h2{
+					font-size: 38px;
+				}
+			}
+		}
+	}
+}
+
+@include laptop() {
+  .header_text{
+		.header_text_wrap{
+			max-width: $laptop_max;
+			min-height: 650px;
+			.header_film_text{
+				margin-top: 70px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+				h2{
+					font-size: 34px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $laptop_max) {
+  .header__wrapper {
+    padding: 0 25px;
+  }
+  .header__menu {
+    display: none;
+  }
+  .header__user-btns {
+    width: 250px;
+    &-search {
+      order: 2;
+    }
+    &-authorize {
+      order: 1;
+    }
+    &-hamburger {
+      display: block;
+      order: 3;
+    }
+    & i {
+      background-color: $color5;
+      padding: 10px;
+      border-radius: 50%;
+      &:hover {
+        color: $color3;
+      }
+    }
+  }
+  .main-timer {
+    display: block;
+    text-align: center;
+    &__title {
+      padding: 20px 0;
+      font-size: 2em;
+    }
+    &__counter {
+      margin: 0 auto;
+      font-size: 2em;
+    }
+  }
+  .our-pricing-strategy {
+    &__items {
+      flex-direction: column;
+      
+    }
+    &__item {
+      margin-bottom: 25px;
+      width: 50%;
+    }
+    .narrow {
+      width: 50%;
+    }
+  }
+}
+
+@include tablets() {
+  .header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 600px;
+			.header_film_text{
+				width: 80%;
+				margin-top: 70px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+				h2{
+					font-size: 28px;
+				}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+
+@media (max-width: $tablets_max) {
+  .our-pricing-strategy {
+    .narrow {
+      width: 100%;
+    }
+    &__item {
+      width: 100%;
+    }
+    .strategy {
+      &__item {
+        width: 100%;
+        font-size: 1em;
+        &-plan {
+          font-size: 1em;
+        }
+        &-price {
+          font-size: 1.5em;
+          width: 35%;
+          & span {
+            font-size: 0.8em;
+          }
+        }
+        &-parameters {
+          font-size: 0.8em;
+        }
+        &-parameter {
+          &_included {
+            color: $color9;
+          }
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablets_max) and (min-width: 561px) {
+  .explore-language {
+    &__title {
+      text-align: center;
+    }
+    &__items {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      margin: 0 auto;
+      width: 500px;
+    }
+    &__item {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .main-timer {
+    height: 170px;
+    padding: 0px 30px;
+    &__title {
+      padding: 10px 0;
+      font-size: 1.5em;
+    }
+    &__counter {
+      max-width: 360px;
+      width: 100%;
+    }
+    &__item {
+      font-size: 0.8em;
+      margin: 0 5px;
+    }
+  }
+  .explore-language {
+    &__title {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__items {
+      margin: 0 auto;
+      width: 250px;
+      flex-direction: column;
+    }
+    &__item {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+@include phones() {
+  .header__user-btns {
+    width: 90px;
+    &-authorize {
+      display: none;
+    }
+  }
+}
+
+// media of Nikita for phones
+@media (max-width: $phones_max) and (min-width: 460px){
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 500px;
+			.header_film_text{
+				width: 80%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 26px;
+						margin-bottom: 5px;
+					}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						font-size: 14px;
+						i{
+							font-size: 40px;
+						}
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 459px) and (min-width: 380px){
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 500px;
+			.header_film_text{
+				width: 100%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 26px;
+						margin-bottom: 5px;
+					}
+				.header_film_info{
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						display: none;
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 379px){
+	.header_text{
+		.header_text_wrap{
+			max-width: 100%;
+			min-height: 380px;
+			.header_film_text{
+				width: 100%;
+				margin-top: 90px;
+				.header_text_logo{
+					p{
+						font-size: 11px;
+					}
+				}
+					h2{
+						font-size: 22px;
+						margin: 10px 0 5px;
+					}
+				.header_film_info{
+					height: 150px;
+					overflow: hidden;
+					p{
+						font-size: 15px;
+						margin-bottom: 12px;
+					}
+					margin-bottom: 25px;
+				}
+				.header_film_btns{
+					.header-film-play-btn{
+						width: 135px;
+						a{
+							font-size: 14px;
+							line-height: 18px;
+							padding: 12px 15px;
+						}
+					}
+					.header-film-trailer-btn{
+						display: none;
+					}
+				}
+			}
+			.header_text_empty{
+				display: none;
+			}
+		}
+	}
+}
+

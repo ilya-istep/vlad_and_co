@@ -1,153 +1,818 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-</head>
-<body class="el-main">
-	<div class="Latest_Movies">
-		<div class="Latest_Movies_text">
-			<a href="#">
-				<h2>Latest Movies</h2>
-			</a>
-		</div>
-		<div class="img_movies">
-			<div class="Movies_1">
-				<div class="hover_movies">
-					<img src="img/movie_1.jpg">
-				</div>
-				<div class="Movies_1_a">
-					<a href="#">
-						Spider-Man: Into The Spider-Verse
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Action, Adventure</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>125 min</p>
-				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_2.jpg">
-				<div class="Movies_1_a">
-					<a href="#">
-						Snow White And The Seven Dwarfs
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Drama</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>145 min</p>
-				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_3.jpg">
-				<div class="Movies_1_a">
-					<a href="#">
-						Kubo And The Two Strings
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Horror</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>154 min</p>
-				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_4.jpg">
-				<div class="Movies_1_a">
-					<a href="#">
-						How To Train Your Dragon
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Kids & Family</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>137 min</p>
-				</div>
-			</div>
-		</div>
-	</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="el-main">
+    <header class="header">
+      <div class="header__wrapper">
+        <a class="header__logo" id="logo">
+          <img class="header__logo-img" src="img/logo.png" alt="" />
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item header__menu-item_active">
+            <a class="header__menu-link" href="#">Home</a>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">
+              Blog
+              <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </a>
+            <ul class="nestingHorizontal">
+              <li><a href="#">Left Slidebar</a></li>
+              <li><a href="#">Right Slidebar</a></li>
+              <li><a href="#">Blog List</a></li>
+              <li>
+                <a href="#">
+                  Blog Clean
+                  <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </a>
+                <ul>
+                  <li><a href="#">Blog clean</a></li>
+                  <li><a href="#">blog Clean – Full Width</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  Blog Only Text
+                  <i class="fa-solid fa-chevron-down arrow-down"></i>
+                </a>
+                <ul>
+                  <li><a href="#">Blog Only Text</a></li>
+                  <li><a href="#">Blog Only Text – Full Width</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Blog image</a></li>
+              <li><a href="#">No Slidebar</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">
+              Post Format
+              <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </a>
+            <ul class="nestingUL">
+              <li><a href="#">Text Only</a></li>
+              <li><a href="#">Standard</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Video</a></li>
+              <li><a href="#">Audio</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">
+              Page
+              <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </a>
+            <ul class="nestingUL">
+              <li><a href="#">Ticket</a></li>
+              <li><a href="#">Shows</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">FAQs Page</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Page 404</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">
+              Portfolio
+              <i class="fa-solid fa-chevron-down arrow-down"></i>
+            </a>
+            <ul class="nestingUL">
+              <li><a href="#">2 Column Containd</a></li>
+              <li><a href="#">3 Column Containd</a></li>
+              <li><a href="#">4 Column Containd</a></li>
+              <li><a href="#">2 Columns</a></li>
+              <li><a href="#">4 Columns</a></li>
+              <li><a href="#">6 Columns</a></li>
+              <li><a href="#">Masonry 2 Columns wide</a></li>
+              <li><a href="#">Masonry 3 Columns wide</a></li>
+              <li><a href="#">Masonry 4 Columns wide</a></li>
+              <li><a href="#">Masonry 3 Columns Contained</a></li>
+              <li><a href="#">Masonry 4 Columns Contained</a></li>
+            </ul>
+          </li>
+          <li class="header__menu-item">
+            <a class="header__menu-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <div class="header__user-btns">
+          <a class="header__user-btns-search" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </a>
+          <div class="header__user-btns-authorize">Get in touch</div>
+					<div class="header__user-btns-hamburger">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+        </div>
+      </div>
+      <div class="header_text">
+        <div class="header_text_wrap">
+          <div class="header_film_text">
+            <div class="header_text_logo">
+              <p>VIP</p>
+            </div>
+            <h2 class="header_film_name">Madagascar 3</h2>
+            <div class="header_film_info">
+              <p>2016 | 4.7(lmdb) | 18+ | 2hr : 22mins | English</p>
+              <p>
+                Streamlab is a long established fact that a reader will be
+                distracted by the readable content of a page when Streamlab
+                atits layout Streamlab
+              </p>
+              <p>
+                <span class="header_film_info_color">Starring</span> Karen
+                Gilchrist, James Earl Jones
+              </p>
+              <p><span class="header_film_info_color">Genres</span> Action</p>
+              <p>
+                <span class="header_film_info_color">Tag</span> Action,
+                Adventure, Horror
+              </p>
+            </div>
+            <div class="header_film_btns">
+              <div class="header-film-play-btn">
+                <a href="#">Play now</a>
+              </div>
+              <a href="#" class="header-film-trailer-btn">
+                <i class="fa-regular fa-circle-play"></i>
+                <p>WATCH TRAILER</p>
+              </a>
+            </div>
+          </div>
+          <div class="header_text_empty"></div>
+        </div>
+      </div>
+			<a href="#logo" class="anchor"></a>
+    </header>
 
-	<div class="Latest_Movies">
-		<div class="Latest_Movies_text">
-			<a href="#">
-				<h2>Regional Shows</h2>
-			</a>
+		<section class="wrap_Latest_Movies">
+			<div class="Latest_Movies">
+				<div class="Latest_Movies_text">
+					<a href="#">
+						<h2 class="mov_h2">Latest Movies</h2>
+					</a>
+					<div class="VIEW">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+				<div class="img_movies">
+					<div class="Movies_1 class_for_media1">
+						<div class="hover_movies">
+							<img src="img/movie_1.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Spider-Man: Into The Spider-...
+							</a>
+						</div>
+						<div class="Movies_1_h2">
+							<a href="#">
+								<h2>Action, Adventure</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>125 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">3.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media2">
+						<div class="hover_movies">
+							<img src="img/movie_2.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Snow White And The Seven...
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Drama</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>145 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">1.2</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media3">
+						<div class="hover_movies">
+							<img src="img/movie_3.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Kubo And The Two Strings
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Horror</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>154 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media4">
+						<div class="hover_movies">
+							<img src="img/movie_4.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								How To Train Your Dragon
+							</a>
+						</div>
+						<div class="Movies_1_h4">
+							<a href="#">
+								<h2>Kids & Family</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>137 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="Latest_Movies .Latest_Movies2">
+				<div class="Latest_Movies_text">
+					<a href="#">
+						<h2 class="mov_h2">Regional Shows</h2>
+					</a>
+					<div class="VIEW">
+						<a href="#">VIEW ALL</a>
+					</div>
+				</div>
+				<div class="img_movies">
+					<div class="Movies_1 class_for_media1">
+						<div class="hover_movies">
+							<img src="img/movie_5.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Shaun The Sheep Movie
+							</a>
+						</div>
+						<div class="Movies_1_h2">
+							<a href="#">
+								<h2>Action, Adventure</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>125 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">3.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media2">
+						<div class="hover_movies">
+							<img src="img/movie_6.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								My Life as a Zucchini (Ma Vie...)
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Drama</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>145 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">1.2</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media3">
+						<div class="hover_movies">
+							<img src="img/movie_7.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								The Lego Batman Movie
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Horror</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>154 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media4">
+						<div class="hover_movies">
+							<img src="img/movie_8.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								The Nightmare Before...
+							</a>
+						</div>
+						<div class="Movies_1_h4">
+							<a href="#">
+								<h2>Kids & Family</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>137 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.1</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="bashir">
+			<div class="bashir_obertka"> 
+				<div class="bashir_l">
+					<div class="bashir_l_h">
+						<H2 class="bashir_l_h_logo">Waltz With Bashir</H2>
+						<div class="bashir_l_h_text">
+							<p><span class="bashir_l_h_title">2016 | 4.7(lmdb) | 18+ | 2hr : 22mins | English</span></p>
+							<p>Streamlab is a long established fact that a reader will be distracted by content of a page when Streamlab atits layout Streamlab is a long established fact that a reader will be distracted by content of a page when Streamlab atits layout Strea...</p>
+						</div>		 
+					</div>
+					<div class="bashir_l_b">
+						<div class="bashir_l_h_button">
+							<a href="#"> <span>play now</span></a>
+						</div>
+					</div>
+					</div>
+					<div class="bashir_r">
+						<div class="bashir_r_img">
+							<img src="img/video.jpg">
+						</div>
+					</div>
+			</div>
 		</div>
-		<div class="img_movies">
-			<div class="Movies_1">
-				<img src="img/movie_5.jpg">
-				<div class="Movies_1_a">
+
+    <section class="main-timer">
+      <h2 class="main-timer__title">Live Show Will Start In​</h2>
+      <div class="main-timer__counter">
+        <div class="main-timer__item main-timer__days">500</div>
+        <div class="main-timer__item main-timer__hours">12</div>
+        <div class="main-timer__item main-timer__minutes">55</div>
+        <div class="main-timer__item main-timer__seconds">01</div>
+      </div>
+    </section>
+
+    <section class="explore-language">
+      <div class="explore-language__title">Explore In Your Language</div>
+      <div class="explore-language__items">
+        <div class="explore-language__item explore-language__item_english">
+          ENGLISH
+        </div>
+        <div class="explore-language__item explore-language__item_hindi">
+          HINDI
+        </div>
+        <div class="explore-language__item explore-language__item_marathi">
+          MARATHI
+        </div>
+        <div class="explore-language__item explore-language__item_telugu">
+          TELUGU
+        </div>
+        <div class="explore-language__item explore-language__item_tamil">
+          TAMIL
+        </div>
+      </div>
+    </section>
+
+    <section class="widget">
+      <div class="widget__wrap">
+        <h2>The Incredibles</h2>
+        <p>2016 | 4.7(lmdb) | 18+ | 2hr : 22mins | English</p>
+        <p>
+          Streamlab is a long established fact that a reader will be distracted
+          content of a page when Streamlab atits Streamlab is a long established
+          fact that a reader will be distracted by the readable content of a
+          page when Streamlab atits layou...
+        </p>
+        <span>
+          <a href="#">play now</a>
+        </span>
+      </div>
+    </section>
+
+    <section class="movies_dva">
+      <div class="movies_action">
+        <div class="movies_logo">
+          <h2>Action Movies</h2>
+        </div>
+        <div class="movies_video">
+          <a href="#" class="video_link">
+            <img src="img/vid_big1.jpg" />
+          </a>
+        </div>
+        <div class="catalog_movies">
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml1.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>English, 1999</h3>
+                <p>Kubo and the Two Strings</p>
+              </div>
+            </a>
+          </div>
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml2.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>Marathi, 2014</h3>
+                <p>Tthe LEGO Movie</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="catalog_movies">
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml5.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>Telugu, 2018</h3>
+                <p>Grave of the Fireflies</p>
+              </div>
+            </a>
+          </div>
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml6.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>English, 2018</h3>
+                <p>Song Of The Sea</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="movies_horror">
+        <div class="movies_logo">
+          <h2>Horror Movies</h2>
+        </div>
+        <div class="movies_video">
+          <a href="#" class="video_link">
+            <img src="img/vid_big2.jpg" />
+          </a>
+        </div>
+        <div class="catalog_movies">
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml3.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>Hindi, 2011</h3>
+                <p>Snow White and the Seven Dwarfs</p>
+              </div>
+            </a>
+          </div>
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml4.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>English, 2018</h3>
+                <p>Spider-Man: Into the Spider-Verse</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="catalog_movies">
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml7.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>Tamil, 20018</h3>
+                <p>The Secret World of Arrietty</p>
+              </div>
+            </a>
+          </div>
+          <div class="kartocka">
+            <a href="#" class="link_kartocka_r">
+              <div class="kartocka_r_img">
+                <img src="img/vid_sml8.jpg" />
+              </div>
+              <div class="link_kartocka_r_text">
+                <h3>Gujarati, 2018</h3>
+                <p>Ralph Breaks the Internet</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+		<div class="wrap_Latest_Movies">
+			<div class="Latest_Movies">
+				<div class="Latest_Movies_text">
 					<a href="#">
-						Shaun The Sheep Movie
+						<h2 class="mov_h2">All Time Hits</h2>
 					</a>
+					<div class="VIEW">
+						<a href="#">VIEW ALL</a>
+					</div>
 				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Action, Adventure</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>125 min</p>
+				<div class="img_movies">
+					<div class="Movies_1 class_for_media1">
+						<div class="hover_movies">
+							<img src="img/movie_9.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Grave Of The Fireflies (Hotaru...
+							</a>
+						</div>
+						<div class="Movies_1_h2">
+							<a href="#">
+								<h2>Action, Adventure</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>125 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">3.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media2">
+						<div class="hover_movies">
+							<img src="img/movie_10.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								How To Train Your Dragon: Th...
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Drama</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>145 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">1.2</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media3">
+						<div class="hover_movies">
+							<img src="img/movie_11.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Who Framed Roger Rabbit
+							</a>
+						</div>
+						<div class="Movies_1_h3">
+							<a href="#">
+								<h2>Horror</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>154 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.5</p>
+						</div>
+					</div>
+					<div class="Movies_1 class_for_media4">
+						<div class="hover_movies">
+							<img src="img/movie_12.jpg">
+						</div>
+						<div class="Movies_1_a">
+							<a href="#">
+								Wallace & Gromit: The Curse ...
+							</a>
+						</div>
+						<div class="Movies_1_h4">
+							<a href="#">
+								<h2>Kids & Family</h2>
+							</a>
+							<i class="fa-solid fa-clock"></i>
+							<p>137 min</p>
+							<i class="fa-solid fa-thumbs-up"></i>
+							<p class="like">4.1</p>
+						</div>
+					</div>
 				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_6.jpg">
-				<div class="Movies_1_a">
+				<div class="Latest_Movies_text Latest_News">
 					<a href="#">
-						My Life as a Zucchini (Ma vie de courgette)
-					</a>
+						<h2 class="mov_h2">Latest News</h2>
+					</a>	
 				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Drama</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>145 min</p>
-				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_7.jpg">
-				<div class="Movies_1_a">
-					<a href="#">
-						The Lego Batman Movie
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Horror</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>154 min</p>
-				</div>
-			</div>
-			<div class="Movies_1">
-				<img src="img/movie_8.jpg">
-				<div class="Movies_1_a">
-					<a href="#">
-						The Nightmare Before Christmas
-					</a>
-				</div>
-				<div class="Movies_1_h2">
-					<a href="#">
-						<h2>Kids & Family</h2>
-					</a>
-					<i class="fa-solid fa-clock"></i>
-					<p>137 min</p>
+				<div class="blog_image">
+					<div class="wrap_blog_img">
+						<a href="#">
+							<img src="img/blog_12.jpg">
+						</a>
+						<div class="award_ceremony">
+							<h2>Award Ceremony</h2>
+							<p>qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius</p>
+							<a href="#">LEARN MORE</a>
+						</div>
+						
+					</div>
+					<div class="wrap_blog_img2">
+						<a href="#">
+							<img src="img/blog_11.jpg">
+						</a>
+						<div class="award_ceremony2">
+							<h2>Best Design Film</h2>
+							<p>Home ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut...</p>
+							<a href="#">LEARN MORE</a>
+						</div>
+						
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-		
-	</div>
-</body>
+
+		<section class="our-pricing-strategy section">
+      <h2 class="our-pricing-strategy__title">OUR PRICING STRATEGY</h2>
+      <div class="our-pricing-strategy__items">
+        <div class="our-pricing-strategy__item">
+          <h4 class="strategy__item-plan">Vip</h4>
+          <div class="strategy__item-price">
+            <span>$</span>19.99<span>Month</span>
+          </div>
+          <ul class="strategy__item-parameters">
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              better video quality
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              2K Resolution
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              Dolby 1.1 Audio quality
+            </li>
+            <li class="strategy__item-parameter">1 Screens you can watch on</li>
+            <li class="strategy__item-parameter">Unlimited Live Sports</li>
+            <li class="strategy__item-parameter">Enhanced Security</li>
+          </ul>
+          <div class="strategy__item-btn">
+            <a class="strategy__item-btn_link" href="#">Buy now</a>
+          </div>
+        </div>
+        <div class="our-pricing-strategy__item narrow">
+          <h4 class="strategy__item-plan">PREMIUM PLAN</h4>
+          <div class="strategy__item-price">
+            <span>$</span>29.99<span>Month</span>
+          </div>
+          <ul class="strategy__item-parameters">
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              better Audio , video quality
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              4K Resolution
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              Dolby 5.1 Audio quality
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              2 Screens you can watch on
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              Unlimited Live Sports
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              Enhanced Security High
+            </li>
+            <li class="strategy__item-parameter">live video</li>
+          </ul>
+          <div class="strategy__item-btn">
+            <a class="strategy__item-btn_link" href="#">Buy now</a>
+          </div>
+        </div>
+        <div class="our-pricing-strategy__item">
+          <h4 class="strategy__item-plan">BASIC PLAN</h4>
+          <div class="strategy__item-price">
+            <span>$</span>22.34<span>Month</span>
+          </div>
+          <ul class="strategy__item-parameters">
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              better video quality
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              3K Resolution
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              Dolby 3.1 Audio quality
+            </li>
+            <li
+              class="strategy__item-parameter strategy__item-parameter_included"
+            >
+              2 Screens you can watch on
+            </li>
+            <li class="strategy__item-parameter">Unlimited Live Sports</li>
+            <li class="strategy__item-parameter">Enhanced Security</li>
+          </ul>
+          <div class="strategy__item-btn">
+            <a class="strategy__item-btn_link" href="#">Buy now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__main-wrap">
+          <div class="footer_adress_section">
+            <div class="footer_logo">
+              <img src="img/logo.png">
+            </div>
+            <div class="footer_form_section">
+              <form>
+                <input input type="email" name="email" placeholder="Enter your email address" required="">
+                <button type="submit">
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+          <div class="footer_contact_section">
+            <div class="contact_section_links">
+              <a href="#">About Us</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Service</a>
+              <a href="#">Features</a>
+            </div>
+            <div class="contact_section_social">
+              <a href="#">
+                <i class="fa-brands fa-facebook-square"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-skype"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-snapchat"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="footer__copyright-wrap">
+          <span>Copyright © 2021 Animex. All Rights Reserved.</span>
+          <div class="footer_pay_section">
+            <a href="#">
+              <i class="fa-brands fa-cc-mastercard"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-cc-amex"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-cc-paypal"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-cc-visa"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

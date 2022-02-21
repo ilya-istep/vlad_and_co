@@ -1,10 +1,16 @@
-$color1: #fcfcfc;
+$color1: #e50914;
 $color2: #fff;
-$color3: #f55;
+$color3: #000;
 $color4: #1091ff;
+$color5: #E50914;
+$color6: #212529;
+$color7: #D5A101;
+$color8: #A4A4A4;
+$color9: #0F0;
 
-$width_base: 1100px;
+$width_base: 1300px;
 
+//medoa
 $desctop_max: 1200px;
 $desctop_min: 993px;
 
@@ -15,3 +21,9 @@ $tablets_max: 768px;
 $tablets_min: 481px;
 
 $phones_max: 480px;
+
+//fonts
+$robotoBold: "Roboto-Bold", sans-serif;
+$robotoMedium: "Roboto-Medium", sans-serif;
+$robotoRegular: "Roboto-Regular", sans-serif;
+$fontAwesome: "Font Awesome 6 free";
