@@ -530,6 +530,8 @@
 				}
 				.contact_section_social{
 					display: flex;
+					margin: 0 -8px; // исправил марджин, чтобы при адаптации выглядело ровнее
+
 					a{
 						display: flex;
 						align-items: center;
@@ -537,7 +539,7 @@
 						font-family: "Font Awesome 5 Brands";
 						font-size: 20px;
 						color: $color8;
-						margin-left: 15px;
+						margin: 0 8px; // исправил марджин, чтобы при адаптации выглядело ровнее
 						width: 36px;
 						height: 36px;
 						box-sizing: border-box;
@@ -576,11 +578,12 @@
 				display: flex;
 				justify-content: end;
 				padding: 10px;
+				margin: 0 -10px; // исправил марджин, чтобы больше соответствовал расстояниям оригинала
 				a{
 					font-family: "Font Awesome 5 Brands";
 					color:  $color2;
 					font-size: 26px;
-					margin-left: 15px;
+					margin: 0 10px; // исправил марджин, чтобы больше соответствовал расстояниям оригинала
 				}
 			}
 		}

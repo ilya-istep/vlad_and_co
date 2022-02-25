@@ -97,7 +97,6 @@
 }
 
 
-
 /*Media*/
 @mixin desktop {
     @media screen and (min-width: $desctop_min) and (max-width: $desctop_max) {
@@ -116,6 +115,6 @@
 }
 @mixin phones {
     @media screen and (max-width: $phones_max) {
-    @content;
+    	@content;
 	}
 }
