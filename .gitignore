@@ -1,9 +1,8 @@
-!css/all.min.css
-!css/reset.css
 css/style.css
 css/*.css
-css/*.map
+css/*.css.map
 style.css
+!css/all.min.css
 *.css
 *.map
 .vscode
